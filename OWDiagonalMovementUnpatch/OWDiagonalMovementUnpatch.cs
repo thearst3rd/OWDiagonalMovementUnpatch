@@ -12,9 +12,6 @@ public class OWDiagonalMovementUnpatch : ModBehaviour
 	public void Awake()
 	{
 		Instance = this;
-		// You won't be able to access OWML's mod helper in Awake.
-		// So you probably don't want to do anything here.
-		// Use Start() instead.
 	}
 
 	public void Start()
@@ -23,16 +20,5 @@ public class OWDiagonalMovementUnpatch : ModBehaviour
 		ModHelper.Console.WriteLine($"Outer Wilds Diagonal Movement Unpatch is loaded!", MessageType.Success);
 
 		new Harmony("thearst3rd.OWDiagonalMovementUnpatch").PatchAll(Assembly.GetExecutingAssembly());
-
-		// Example of accessing game code.
-		OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen
-		LoadManager.OnCompleteSceneLoad += OnCompleteSceneLoad;
-	}
-
-	public void OnCompleteSceneLoad(OWScene previousScene, OWScene newScene)
-	{
-		if (newScene != OWScene.SolarSystem) return;
-		ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
 	}
 }
-
