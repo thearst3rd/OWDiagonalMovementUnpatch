@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "OWDiagonalMovementUnpatch.dll",
   "author": "thearst3rd",
-  "name": "Outer Wilds Diagonal Movement Unpatch",
+  "name": "Diagonal Movement Unpatch",
   "uniqueName": "thearst3rd.OWDiagonalMovementUnpatch",
   "version": "0.1.0",
   "owmlVersion": "2.15.1",

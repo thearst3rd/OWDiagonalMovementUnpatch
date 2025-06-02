@@ -17,7 +17,7 @@ public class OWDiagonalMovementUnpatch : ModBehaviour
 	public void Start()
 	{
 		// Starting here, you'll have access to OWML's mod helper.
-		ModHelper.Console.WriteLine($"Outer Wilds Diagonal Movement Unpatch is loaded!", MessageType.Success);
+		ModHelper.Console.WriteLine($"Diagonal Movement Unpatch is loaded!", MessageType.Success);
 
 		new Harmony("thearst3rd.OWDiagonalMovementUnpatch").PatchAll(Assembly.GetExecutingAssembly());
 	}
